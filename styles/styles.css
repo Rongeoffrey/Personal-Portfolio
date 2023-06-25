@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -106,12 +104,14 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(11, 11, 11, 0.7);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
-  height: 70px;
+  background-color: #0B1715;
+  height: 100px;
   width: 100%;
+  font-family: "Poppins";
+  /*background: rgba( 11, 11, 11, 0.7 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9.5px );
+  -webkit-backdrop-filter: blur( 9.5px );*/
 }
 header .header_brand {
   display: flex;
@@ -121,15 +121,15 @@ header .header_brand {
 }
 header .header_brand h2 {
   padding-right: 7px;
-  font-family: "Roboto";
   color: #c5c6c7;
   font-size: 15px;
+  font-weight: 700;
   letter-spacing: 2px;
 }
 header .header_brand h3 {
-  font-family: "Roboto";
   letter-spacing: 2px;
   font-size: 15px;
+  font-weight: 600;
   color: #66FCF1;
 }
 header .header_buttons {
@@ -139,7 +139,6 @@ header .header_buttons {
 header .header_buttons ul {
   display: flex;
   justify-content: center;
-  font-family: "Roboto Condensed";
   font-size: 12px;
   letter-spacing: 1px;
 }
@@ -152,6 +151,7 @@ header .header_buttons ul li a {
 }
 header .header_buttons ul li a:hover {
   color: #c5c6c7;
+  text-decoration: none;
 }
 header .header_buttons ul li a::after {
   content: "";
@@ -160,7 +160,8 @@ header .header_buttons ul li a::after {
   height: 1px;
   background: #66FCF1;
   color: #c5c6c7;
-  transition: width 0.5s;
+  transition: width 0.3s;
+  margin-top: 3px;
 }
 header .header_buttons ul li a:hover::after {
   width: 100%;
@@ -192,6 +193,79 @@ header .header_icons {
   header .header_right .header_buttons ul {
     padding-right: 30px;
     padding-top: 4px;
+  }
+}
+/* MAIN */
+.primary_content {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+#about {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+#about .about_description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  padding: 150px 70px 0px 30px;
+}
+#about .about_description h1 {
+  color: #66FCF1;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+#about .about_description h2, #about .about_description p {
+  color: #c5c6c7;
+  padding: 5px;
+}
+#about .about_description h2 {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+#about .about_description p {
+  font-size: 15px;
+  line-height: 18px;
+}
+#about .about_description #contact_btn {
+  margin-top: 20px;
+  width: 130px;
+  padding: 10px;
+  background-color: transparent;
+  color: #c5c6c7;
+  border: 1px solid #66FCF1;
+  border-radius: 10px;
+}
+#about .about_description #contact_btn:hover {
+  color: #0B1715;
+  background-color: #66FCF1;
+  transition: ease-in 0.2s;
+}
+#about .about_description2 {
+  flex: 1;
+  height: auto;
+}
+#about .about_description2 .about_picture {
+  background-image: url(./images/PersonalIcon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 1000px) { /* DESKTOP */
+  #about {
+    display: flex;
   }
 }
 body {
