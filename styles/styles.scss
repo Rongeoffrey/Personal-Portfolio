@@ -1,0 +1,19 @@
+// RESETSHEET
+@import "./resetSheet";
+
+// FONTS USED
+@import "./fontSheet";
+
+// VARIABLES
+@import "./variables";
+
+// HEADER
+@import "./header";
+
+
+body{
+    background-color: $quaternaryColor;
+}
+
+@media only screen and (min-width: 1000px){ /* DESKTOP */
+}

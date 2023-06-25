@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+  text-decoration: none;
+}
+
+/* IMPORTED FONTS */
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 11, 11, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  height: 70px;
+  width: 100%;
+}
+header .header_brand {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  padding-top: 15px;
+}
+header .header_brand h2 {
+  padding-right: 7px;
+  font-family: "Roboto";
+  color: #c5c6c7;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+header .header_brand h3 {
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: #66FCF1;
+}
+header .header_buttons {
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+header .header_buttons ul {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+header .header_buttons ul li {
+  list-style: none;
+  padding: 0px 10px 0px;
+}
+header .header_buttons ul li a {
+  color: #c5c6c7;
+}
+header .header_buttons ul li a:hover {
+  color: #c5c6c7;
+}
+header .header_buttons ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #66FCF1;
+  color: #c5c6c7;
+  transition: width 0.5s;
+}
+header .header_buttons ul li a:hover::after {
+  width: 100%;
+}
+header .header_icons {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) { /* DESKTOP */
+  /*HEADER*/
+  header {
+    height: 60px;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 120px;
+  }
+  header .header_brand {
+    align-self: center;
+    padding-top: 0px;
+  }
+  header .header_right {
+    display: flex;
+  }
+  header .header_right .header_buttons {
+    padding: 0px;
+  }
+  header .header_right .header_buttons ul {
+    padding-right: 30px;
+    padding-top: 4px;
+  }
+}
+body {
+  background-color: #0B1715;
+}
+
+@media only screen and (min-width: 1000px) { /* DESKTOP */ }/*# sourceMappingURL=styles.css.map */
