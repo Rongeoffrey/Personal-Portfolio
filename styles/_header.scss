@@ -5,12 +5,14 @@ header{
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba( 11, 11, 11, 0.7 );
+    background-color: $quaternaryColor;
+    height: 60px;
+    width: 100%;
+    font-family: $primaryFont;
+    /*background: rgba( 11, 11, 11, 0.7 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    height: 70px;
-    width: 100%;
+    -webkit-backdrop-filter: blur( 9.5px );*/
     .header_brand{
         display: flex;
         text-transform: uppercase;
@@ -18,15 +20,15 @@ header{
         padding-top: 15px;
         h2{
             padding-right: 7px;
-            font-family: $primaryFont;
             color: $tertiaryColor;
             font-size: 15px;
+            font-weight: 700;
             letter-spacing: 2px;
         }
         h3{
-            font-family: $primaryFont;
             letter-spacing: 2px;
             font-size: 15px;
+            font-weight: 600;
             color: $secondaryColor;
         }
     }
@@ -36,7 +38,6 @@ header{
         ul{
             display: flex;
             justify-content: center;
-            font-family: $secondaryFont;
             font-size: 12px;
             letter-spacing: 1px;
             li{
@@ -46,6 +47,7 @@ header{
                     color: $tertiaryColor;
                     &:hover{
                         color: $tertiaryColor;
+                        text-decoration: none;
                     }
                     &::after{
                         content: '';
@@ -54,11 +56,12 @@ header{
                         height: 1px;
                         background: $secondaryColor;
                         color: $tertiaryColor;
-                        transition: width .5s;
+                        transition: width .3s;
+                        margin-top: 3px;
                     }
                     &:hover::after{
                         width: 100%;
-                    }
+                    } 
                 }
             }
         }
@@ -71,7 +74,7 @@ header{
 @media only screen and (min-width: 1000px){ /* DESKTOP */
     /*HEADER*/
     header{
-        height: 60px;
+        height: 70px;
         width: inherit;
         display: flex;
         justify-content: space-between;
