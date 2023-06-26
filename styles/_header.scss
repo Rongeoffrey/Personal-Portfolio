@@ -6,7 +6,7 @@ header{
     top: 0;
     z-index: 100;
     background-color: $quaternaryColor;
-    height: 100px;
+    height: 60px;
     width: 100%;
     font-family: $primaryFont;
     /*background: rgba( 11, 11, 11, 0.7 );
@@ -74,7 +74,7 @@ header{
 @media only screen and (min-width: 1000px){ /* DESKTOP */
     /*HEADER*/
     header{
-        height: 60px;
+        height: 70px;
         width: inherit;
         display: flex;
         justify-content: space-between;
