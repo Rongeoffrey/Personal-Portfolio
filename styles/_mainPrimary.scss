@@ -13,7 +13,7 @@
     height: 100%;
     margin: auto;
     display: block;
-    .about_description2{
+    .about_icon{
         flex: 1;
         height: auto;
         .about_picture{
@@ -77,7 +77,7 @@
     #about{
         display: flex;
         flex-direction: row-reverse;
-        .about_description2{
+        .about_icon{
             padding-top: 10px;
             .about_picture{
                 margin-top: 100px;

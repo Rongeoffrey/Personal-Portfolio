@@ -207,11 +207,11 @@ header .header_icons {
   margin: auto;
   display: block;
 }
-#about .about_description2 {
+#about .about_icon {
   flex: 1;
   height: auto;
 }
-#about .about_description2 .about_picture {
+#about .about_icon .about_picture {
   background-image: url(./images/PersonalIcon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -271,10 +271,10 @@ header .header_icons {
     display: flex;
     flex-direction: row-reverse;
   }
-  #about .about_description2 {
+  #about .about_icon {
     padding-top: 10px;
   }
-  #about .about_description2 .about_picture {
+  #about .about_icon .about_picture {
     margin-top: 100px;
   }
   #about .about_description {
