@@ -5,7 +5,7 @@
 // PRIMARY
 .primary_content{
     width: 100%;
-    height: calc(100vh - 70px);
+    height: auto;
 }
 
 #about{
@@ -13,12 +13,26 @@
     height: 100%;
     margin: auto;
     display: block;
+    .about_description2{
+        flex: 1;
+        height: auto;
+        .about_picture{
+            background-image: url(./images/PersonalIcon.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            margin-top: 80px;
+            border-radius: 50%;
+        }
+    }
     .about_description{
         flex: 1;
         display: flex;
         flex-direction: column;
         font-family: $primaryFont;
-        padding: 150px 70px 0px 30px;
+        padding: 50px 0px 0px;
         h1{
             color: $secondaryColor;
             font-size: 40px;
@@ -54,24 +68,23 @@
             }
         }
     }
-    .about_description2{
-        flex: 1;
-        height: auto;
-        .about_picture{
-            background-image: url(./images/PersonalIcon.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 300px;
-            height: 300px;
-            margin: auto;
-            margin-top: 100px;
-            border-radius: 50%;
-        }
-    }
 }
 
 @media only screen and (min-width: 1000px){ /* DESKTOP */
+    .primary_content{
+        height: calc(100vh - 70px);
+    }
     #about{
         display: flex;
+        flex-direction: row-reverse;
+        .about_description2{
+            padding-top: 10px;
+            .about_picture{
+                margin-top: 100px;
+            }
+        }
+        .about_description{
+            padding: 150px 70px 0px 30px;
+        }
     }
 }
