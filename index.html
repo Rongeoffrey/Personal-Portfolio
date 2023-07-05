@@ -67,13 +67,56 @@
                     <p> An open source software for distributed version control: tracking changes in any set of files</p>
                 </div>-->
             </div>
+
+            <button onclick="topFunction()" id="scrollBtn" title="Go to top">↑</button>
+            <script src="js/scroll.js"></script>
         </div>
 
         <div class="tertiary_content">
             <div id="projects"></div>
         </div>
         <div class="quaternary_content">
-            <div id="contact"></div>
+            <div id="contact">
+                <div class="contact_description">
+                    <h2> Get in Touch </h2>
+                    <p> Let me know more about your concern. I will gladly
+                        respond to it as soon as possible.
+                    </p>
+
+                    <div class="contact_email">
+                        <div class="mail_icon"></div>
+                        <div class="email">
+                            <p> aaronmarasigangeoffrey@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="contact_form">
+                    <form onsubmit="event.preventDefault(); validateForm()">
+                        <div class="contact_form_text">
+                            <h2> Contact </h2>
+    
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Your name">
+                            <small class="error"></small>
+    
+                            <label for="email"></label>
+                            <input type="text" id="email" placeholder="Your email">
+                            <small class="error"></small>
+    
+                            <label for="name"></label>
+                            <textarea id="concern" placeholder="What is your corncern?" rows="6"></textarea>
+                            <small class="error"></small>
+    
+                            <div class="success">
+                                <input type="submit" value="Send Message">
+                                <p id="success"></p>
+                            </div>
+                        </div>
+                    </form>
+                    <script src="./js/contact.js"></script>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -100,10 +143,10 @@
                     <h5> Follow Me </h5>
                 </div>
                 <div class="social_icon">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.facebook.com/rongeoffreyy/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/rngeoffrey_"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rongeoffrey/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rongeoffrey/"><i class="fa fa-linkedin-square"></i></a>
                 </div>
             </div>
             <p class="copyright"> &copy; Copyright All rights reserved. </p>
