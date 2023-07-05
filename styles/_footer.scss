@@ -84,4 +84,15 @@ footer{
 }
 
 @media only screen and (min-width: 1000px){ /* DESKTOP */
+    .footer_thirddiv{
+        .social{
+            display:flex;
+            justify-content: space-between;
+            margin: 0px 50px;
+        }
+        .copyright{
+            text-align: left;
+            margin: 0px 50px;
+        }
+    }
 }
