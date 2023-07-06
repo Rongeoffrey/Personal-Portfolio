@@ -6,8 +6,79 @@
 
 .secondary_content{
     width: 100%;
-    height: 100vh;
-    background-color: $secondaryColor;
-    margin-top: 70px;
-    padding-top: 70px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: $primaryColor;
+    font-family: $primaryFont;
+    margin-top: 30px;
+    padding-bottom: 100px;
+    .skills_container{
+        background-color: $primaryColor;
+        width: 65%;
+        margin: 70px 0px 0px;
+        .skills_text{
+            color: $secondaryColor;
+            margin: 20px 0px 0px;
+            text-align: center;
+            h1{
+                font-weight:700;
+                font-size: 30px;
+                letter-spacing: 2px;
+                padding: 30px 0px;
+            }
+        }
+        #skills{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            .skill_box{
+                height: 180px;
+                width: 180px;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                margin: auto;
+                padding: 30px 0px;
+                .skill1, .skill2, .skill3, .skill4, .skill5, .skill6, .skill7, .skill8 {
+                    width: 80px;
+                    height: 80px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin: auto;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color: $tertiaryColor;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                .skill1{
+                    background-image: url(./images/skills_icon/htmlicon.png);
+                }
+                .skill2{
+                    background-image: url(./images/skills_icon/cssicon.png);
+                }
+                .skill3{
+                    background-image: url(./images/skills_icon/jsicon.png);
+                }
+                .skill4{
+                    background-image: url(./images/skills_icon/giticon.png);
+                }
+                .skill5{
+                    background-image: url(./images/skills_icon/scssicon.png);
+                }
+                .skill6{
+                    background-image: url(./images/skills_icon/reacticon.png);
+                }
+                .skill7{
+                    background-image: url(./images/skills_icon/firebaseicon.png);
+                }
+                .skill8{
+                    background-image: url(./images/skills_icon/figmaicon.png);
+                }
+            }
+        }
+    }
 }
