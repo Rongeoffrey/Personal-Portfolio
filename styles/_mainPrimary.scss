@@ -61,6 +61,7 @@
             color: $tertiaryColor;
             border: 1px solid $secondaryColor;
             border-radius: 10px;
+            cursor: pointer;
             &:hover{
                 color: $quaternaryColor;
                 background-color: $secondaryColor;

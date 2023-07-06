@@ -256,6 +256,7 @@ header .header_icons {
   color: #c5c6c7;
   border: 1px solid #66FCF1;
   border-radius: 10px;
+  cursor: pointer;
 }
 #about .about_description #contact_btn:hover {
   color: #0B1715;
@@ -313,6 +314,7 @@ header .header_icons {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 25px;
   padding: 20px;
+  list-style: none;
 }
 .secondary_content .skills_container #skills .skill_box {
   height: 180px;
@@ -320,8 +322,12 @@ header .header_icons {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   margin: auto;
   padding: 30px 0px;
+  transition: transform 0.3s;
 }
-.secondary_content .skills_container #skills .skill_box .skill1, .secondary_content .skills_container #skills .skill_box .skill2, .secondary_content .skills_container #skills .skill_box .skill3, .secondary_content .skills_container #skills .skill_box .skill4, .secondary_content .skills_container #skills .skill_box .skill5, .secondary_content .skills_container #skills .skill_box .skill6, .secondary_content .skills_container #skills .skill_box .skill7, .secondary_content .skills_container #skills .skill_box .skill8 {
+.secondary_content .skills_container #skills .skill_box:hover {
+  transform: scale(1.1);
+}
+.secondary_content .skills_container #skills .skill_box .skill {
   width: 80px;
   height: 80px;
   background-size: contain;
@@ -371,7 +377,7 @@ header .header_icons {
   font-family: "Poppins";
 }
 .quaternary_content #contact .contact_description {
-  padding: 0px 50px 30px;
+  padding: 0px 50px 30px 100px;
 }
 .quaternary_content #contact .contact_description h2 {
   text-transform: uppercase;
