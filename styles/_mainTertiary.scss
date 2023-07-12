@@ -3,3 +3,44 @@
 /* MAIN */
 
 // TERTIARY
+#tertiary_content{
+    padding: 100px 0px;
+    #projects{
+        width: 100%;
+        height: auto;
+        font-family: $primaryFont;
+        .projects_text{
+            color: $secondaryColor;
+            margin: 20px 0px 0px;
+            text-align: center;
+            h1{
+                font-weight:700;
+                font-size: 30px;
+                letter-spacing: 2px;
+                padding: 30px 0px;
+            }
+        }
+        .project{
+            margin: auto;
+            width: 80%;
+            min-height: 400px;
+            padding: 150px 20px 0px;
+            background-size: cover;
+            h2, p{
+                text-align: center;
+                font-family: $primaryFont;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            p{
+                margin-top: 20px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+#magus{
+    background-image: url(./images/projects_wallpaper/quiz_magus.png);
+}

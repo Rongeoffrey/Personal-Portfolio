@@ -267,6 +267,7 @@ header .header_icons {
 @media only screen and (min-width: 1000px) { /* DESKTOP */
   .primary_content {
     height: calc(100vh - 70px);
+    margin-top: 30px;
   }
   #about {
     display: flex;
@@ -367,9 +368,54 @@ header .header_icons {
   background-image: url(./images/skills_icon/figmaicon.png);
 }
 
-/* MAIN */ /* MAIN */
+/* MAIN */
+#tertiary_content {
+  padding: 100px 0px;
+}
+#tertiary_content #projects {
+  width: 100%;
+  height: auto;
+  font-family: "Poppins";
+}
+#tertiary_content #projects .projects_text {
+  color: #66FCF1;
+  margin: 20px 0px 0px;
+  text-align: center;
+}
+#tertiary_content #projects .projects_text h1 {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding: 30px 0px;
+}
+#tertiary_content #projects .project {
+  margin: auto;
+  width: 80%;
+  min-height: 400px;
+  padding: 150px 20px 0px;
+  background-size: cover;
+}
+#tertiary_content #projects .project h2, #tertiary_content #projects .project p {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+}
+#tertiary_content #projects .project p {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#magus {
+  background-image: url(./images/projects_wallpaper/quiz_magus.png);
+}
+
+/* MAIN */
 .quaternary_content {
   padding: 100px 0px;
+  margin-top: 30px;
+  background-color: #0b0c10;
 }
 .quaternary_content #contact {
   width: 100%;
