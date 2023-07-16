@@ -376,6 +376,7 @@ header .header_icons {
   width: 100%;
   height: auto;
   font-family: "Poppins";
+  cursor: pointer;
 }
 #tertiary_content #projects .projects_text {
   color: #66FCF1;
@@ -392,23 +393,48 @@ header .header_icons {
   margin: auto;
   width: 80%;
   min-height: 400px;
-  padding: 150px 20px 0px;
-  background-size: cover;
+  padding: 150px 70px 0px;
+}
+#tertiary_content #projects .project:hover h2, #tertiary_content #projects .project:hover p {
+  opacity: 1;
 }
 #tertiary_content #projects .project h2, #tertiary_content #projects .project p {
   text-align: center;
   font-family: "Poppins";
   font-size: 30px;
   font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: #c5c6c7;
 }
 #tertiary_content #projects .project p {
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 20px;
 }
 
 #magus {
+  position: relative;
+  overflow: hidden;
+}
+
+#magus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(./images/projects_wallpaper/quiz_magus.png);
+  background-size: cover;
+  transition: filter 0.3s ease-in-out;
+  filter: none;
+  z-index: -1;
+}
+
+#magus:hover::before {
+  filter: blur(5px);
+  opacity: 0.3;
 }
 
 /* MAIN */
