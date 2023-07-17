@@ -37,5 +37,14 @@ body{
     background-position: top left;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondaryColor; 
+}
+
 @media only screen and (min-width: 1000px){ /* DESKTOP */
 }

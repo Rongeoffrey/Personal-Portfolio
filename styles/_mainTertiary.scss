@@ -54,7 +54,7 @@
 
 //PROJECTS 
 //QUIZ MAGUS
-#magus {
+#magus, #covid_tracker {
     position: relative;
     overflow: hidden;
 }
@@ -76,4 +76,21 @@
     opacity: 0.3;
 }
 
-//Add a new project
+//COVID-19 TRACKER
+#covid_tracker::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/projects_wallpaper/covidtracker.gif);
+    background-size: cover;
+    transition: filter 0.3s ease-in-out;
+    filter: none;
+    z-index: -1;
+}
+#covid_tracker:hover::before {
+    filter: blur(5px);
+    opacity: 0.3;
+}
