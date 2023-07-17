@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./animation";
 
 /* HEADER */
 header{
@@ -9,10 +10,6 @@ header{
     height: 60px;
     width: 100%;
     font-family: $primaryFont;
-    /*background: rgba( 11, 11, 11, 0.7 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );*/
     .header_brand{
         display: flex;
         text-transform: uppercase;
@@ -43,6 +40,7 @@ header{
             li{
                 list-style: none;
                 padding: 0px 10px 0px;
+                animation: slideTop 1s ease forwards;
                 a{
                     color: $tertiaryColor;
                     &:hover{
